@@ -1,0 +1,78 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  @apply bg-gray-900;
+}
+
+.stars, .stars2, .stars3, .stars4, .stars5 {
+  position: absolute;
+  width: 2px;
+  height: 2px;
+  background: #fff;
+  border-radius: 50%;
+  opacity: 0.7;
+  animation: blink 2s linear infinite;
+}
+
+.stars {
+  top: 10%;
+  left: 10%;
+  box-shadow: 10px 20px #fff, -20px 50px #fff, 30px -30px #fff;
+  animation-delay: 0s;
+}
+
+.stars2 {
+  top: 20%;
+  left: 60%;
+  box-shadow: -10px -20px #fff, 20px -50px #fff, -30px 30px #fff;
+  animation-delay: 0.5s;
+}
+
+.stars3 {
+  top: 70%;
+  left: 30%;
+  box-shadow: 20px 10px #fff, -50px -20px #fff, 30px 30px #fff;
+  animation-delay: 1s;
+}
+
+.stars4 {
+  top: 40%;
+  left: 80%;
+  box-shadow: -20px 10px #fff, 50px -20px #fff, -30px 30px #fff;
+  animation-delay: 1.5s;
+}
+
+.stars5 {
+  top: 80%;
+  left: 50%;
+  box-shadow: 20px -10px #fff, -50px 20px #fff, 30px -30px #fff;
+  animation-delay: 2s;
+}
+
+.star {
+  position: absolute;
+  background: #fff;
+  border-radius: 50%;
+  opacity: 0.7;
+  animation: blink 2s linear infinite;
+}
+
+@keyframes blink {
+  0%, 100% {
+    opacity: 0.7;
+  }
+  50% {
+    opacity: 0.2;
+  }
+}
+
+@keyframes animStar {
+  from {
+    transform: translateY(0px);
+  }
+  to {
+    transform: translateY(-2000px);
+  }
+}
