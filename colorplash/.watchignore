@@ -1,0 +1,9 @@
+**/site-packages/**
+**/.git/**
+**/node_modules/**
+**/DeOldify/**
+**/models/**
+**/venv/**
+**/env/**
+**/__pycache__/**
+**/*.pyc 

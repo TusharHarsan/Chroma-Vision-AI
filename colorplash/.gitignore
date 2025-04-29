@@ -1,0 +1,30 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+venv/
+ENV/
+env/
+env.bak/
+venv.bak/
+*.egg
+*.egg-info/
+
+# Flask
+instance/
+.webassets-cache
+
+# Project specific
+static/uploads/
+result_images/
+models/*.pth
+
+# Misc
+.DS_Store
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local 
